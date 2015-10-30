@@ -112,7 +112,8 @@
                             } else {
                                 var origin = window.location.origin +'/';                         
                                 var lineargradient = $self.css("background-image");                                                             
-                                var y =lineargradient.replace(origin, original);                               
+                                var y =lineargradient.replace(origin, original);
+                                console.log(y);                             
                                 $self.css("background-image", y);
                             }
                             $self[settings.effect](settings.effect_speed);
