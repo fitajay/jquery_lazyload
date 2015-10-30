@@ -110,8 +110,9 @@
                             if ($self.is("img")) {
                                 $self.attr("src", original);
                             } else {
-                                var lineargradient = $self.css("background-image");
-                                var y = lineargradient.replace("http://localhost:3000/", original);
+                                var origin = window.location.origin +'/';                         
+                                var lineargradient = $self.css("background-image");                                                             
+                                var y =lineargradient.replace(origin, original);                               
                                 $self.css("background-image", y);
                             }
                             $self[settings.effect](settings.effect_speed);
