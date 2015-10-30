@@ -110,10 +110,8 @@
                             if ($self.is("img")) {
                                 $self.attr("src", original);
                             } else {
-                                var origin = window.location.origin +'/';                         
-                                var lineargradient = $self.css("background-image");                                                             
-                                var y =lineargradient.replace(origin, original);
-                                console.log(y);                             
+                                 var lineargradient = $self.css("background-image");                                                             
+                                var y =lineargradient.replace("https://b.fitn.in/empty.png", original);                                                    
                                 $self.css("background-image", y);
                             }
                             $self[settings.effect](settings.effect_speed);
